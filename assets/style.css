@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#content_albums{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#albums{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 15px;
+    gap: 15px;
+}
+.itemAlbum{
+    width: auto;
+    display: flex;
+}
+.itemAlbum picture{
+    width: 200px;
+    height: auto;
+}
+.itemAlbum picture img{
+    width: auto; 
+    height: auto;
+
+}
+.itemAlbum h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    
+}
+.itemAlbum span{
+    font-size: 14px;
+    display: block;
+    color: rgb(154, 151, 151);
+    font-weight: 400;
+  
+}
+
+.itemAlbum button a{
+   text-decoration: none;
+}
+.itemAlbum button a img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* BEST MUSIC */
+
+
+#container-best-music{
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    background-color: rgb(198, 188, 253);
+}
+
+#content-music{
+    width:500px;
+    max-width:300px;
+    height: auto;
+    
+}
+#content-music div{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(99, 98, 98);
+    padding: 10px 0px;
+}
+#content-music div img{
+    width: 40px;
+    height: 40px;
+}
+#content-music div span{
+    padding:0px 20px ;
+}
+#content-music div a{
+    font-size: 14px;
+}
+#content-music div a img{
+    width: 20px;
+    height: 20px;
+    display: inline;
+    margin: 0px 10px;
+}
+
+/* imagenes */
+
+#content-imagenes{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:150px 150px;
+    grid-template-rows:150px 150px 150px;
+    justify-content: center;
+    gap: 5px;
+    grid-template-areas: 
+    "image1 image1"
+    "image1 image1"
+    "image2 image3"
+    "image4 image5";
+  }
+
+  .large-image{
+    width: 300px;
+    height: 300px;
+}
+.small-images{
+    width: 100%;
+    height: 100%;
+}
+.image1{
+    grid-area: image1;
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;
+}
+.image4{
+    grid-area: image4;
+}
+.image5{
+    grid-area: image5;
+}
+  
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(198, 188, 253);
+}
+footer p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+footer a img{
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin: 10px;
+}
+
+
+@media (min-width:600px) {
+    #albums{
+        gap: 6px;
+    }
+    .itemAlbum{
+        display:inline;
+    }
+    
+    .itemAlbum picture img{
+        width: 100%; 
+       
+    }
+
+    .itemAlbum span{
+        display: block;
+    }
+    #container-best-music{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #subtitle-best-music{
+        padding-right: 30px;
+    }
+
+
+    #content-imagenes{
+        grid-template-columns: 200px  200px  200px;
+        grid-template-rows: 200px  200px;
+        grid-template-areas: 
+        "image1 image1 image2"
+        "image1 image1 image2"
+        "image4 image3 image5"
+        "image4 image3 image5";
+        gap: 5px;
+    }
+    .large-image{
+        width:400px;
+        height:400px;
+    }
+    .small-images{
+        width: 200px;
+        height: 200px; 
+    }
+    
+}
